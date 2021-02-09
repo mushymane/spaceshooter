@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 1373267906424916080}
   - component: {fileID: 7829051523945413404}
   - component: {fileID: 6264692296878109463}
-  - component: {fileID: 681474918829369120}
+  - component: {fileID: 7686861425165343397}
   - component: {fileID: 1173186997164418546}
   - component: {fileID: -5608613077490557984}
   m_Layer: 9
-  m_Name: Enemy 2
+  m_Name: Big Boy 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1f43c99284327794c992fb46a23c2d22, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 3474b78d0b09c984784a713cffba5769, type: 3}
+  m_Color: {r: 0.31132078, g: 0.12339589, b: 0.077830195, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -110,22 +110,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b3563a2d759b4247a3cffb7accec6a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 300
-  scoreValue: 40500
+  health: 800
+  scoreValue: 255500
   minTimeBetweenShots: 0.4
-  maxTimeBetweenShots: 0.7
-  projectile: {fileID: 8896940211396764307, guid: ff09364e85335f144a4b87630317e742,
+  maxTimeBetweenShots: 1
+  projectile: {fileID: 5094642163262602438, guid: 0798c6f5c11d445479e0e17bf1384e88,
     type: 3}
-  projectileSpeed: 10
-  deathVFX: {fileID: 1071744069281325474, guid: d34d474c1752d864db23cddfb0032f88,
+  projectileSpeed: 30
+  deathVFX: {fileID: 7358454841939959998, guid: d88c4d8a7cbd1a64080b8cc1866c8f5a,
     type: 3}
   durationOfExplosion: 1
   deathSFX: {fileID: 8300000, guid: 126c52029586e6c4788adf04eeca3333, type: 3}
   deathSFXVolume: 0.75
-  shootSound: {fileID: 8300000, guid: 4e890fdda6085de4ba9ca1af4fab7ec9, type: 3}
-  shootSoundVolume: 0.2
---- !u!58 &681474918829369120
-CircleCollider2D:
+  shootSound: {fileID: 8300000, guid: eb4f57ec0f9e4a646b076f05e4ae76a3, type: 3}
+  shootSoundVolume: 0.5
+--- !u!60 &7686861425165343397
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -137,9 +137,55 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.06}
-  serializedVersion: 2
-  m_Radius: 0.46
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.2533333, y: 1.9733334}
+    newSize: {x: 0.97, y: 0.84}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.013333334, y: -0.6933333}
+      - {x: 0.026666667, y: -0.7066667}
+      - {x: 0.14666668, y: -0.56}
+      - {x: 0.2866949, y: -0.29585308}
+      - {x: 0.1639776, y: -0.78094006}
+      - {x: 0.15868366, y: -0.80400574}
+      - {x: 0.18002829, y: -0.85333335}
+      - {x: 0.24669498, y: -0.9866667}
+      - {x: 0.29064417, y: -0.9385989}
+      - {x: 0.3773389, y: -0.8318756}
+      - {x: 0.60663843, y: -0.5252656}
+      - {x: 0.6146497, y: -0.49092662}
+      - {x: 0.53596616, y: 0.1040339}
+      - {x: 0.42946345, y: 0.13380224}
+      - {x: 0.41047454, y: 0.09859887}
+      - {x: 0.26535028, y: 0.18798305}
+      - {x: 0.18694122, y: 0.3775334}
+      - {x: 0.22666667, y: 0.49333334}
+      - {x: 0.22666667, y: 0.8933334}
+      - {x: 0.13333334, y: 0.9866667}
+      - {x: -0.13333334, y: 0.9866667}
+      - {x: -0.22666667, y: 0.8933334}
+      - {x: -0.22666667, y: 0.49333334}
+      - {x: -0.1772825, y: 0.3880396}
+      - {x: -0.24582717, y: 0.18666667}
+      - {x: -0.43300676, y: 0.07668987}
+      - {x: -0.4554775, y: 0.11174826}
+      - {x: -0.5419577, y: 0.09972119}
+      - {x: -0.5493238, y: 0.078556776}
+      - {x: -0.624813, y: -0.5205567}
+      - {x: -0.48825175, y: -0.7024708}
+      - {x: -0.2956177, y: -0.9424707}
+      - {x: -0.2552449, y: -0.9829837}
+      - {x: -0.16537853, y: -0.8093276}
+      - {x: -0.261105, y: -0.44162187}
+      - {x: -0.28274578, y: -0.31319204}
+      - {x: -0.120000005, y: -0.6}
 --- !u!50 &1173186997164418546
 Rigidbody2D:
   serializedVersion: 4

@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 1373267906424916080}
   - component: {fileID: 7829051523945413404}
   - component: {fileID: 6264692296878109463}
-  - component: {fileID: 681474918829369120}
   - component: {fileID: 1173186997164418546}
   - component: {fileID: -5608613077490557984}
+  - component: {fileID: 8288064407513497640}
   m_Layer: 9
-  m_Name: Enemy 2
+  m_Name: Big Boy 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1f43c99284327794c992fb46a23c2d22, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: e74797569de94d144baf4d52368fe7b1, type: 3}
+  m_Color: {r: 0.6848412, g: 0.4764151, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -110,36 +110,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b3563a2d759b4247a3cffb7accec6a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 300
-  scoreValue: 40500
-  minTimeBetweenShots: 0.4
-  maxTimeBetweenShots: 0.7
-  projectile: {fileID: 8896940211396764307, guid: ff09364e85335f144a4b87630317e742,
+  health: 2500
+  scoreValue: 175000
+  minTimeBetweenShots: 2
+  maxTimeBetweenShots: 4
+  projectile: {fileID: 8896940211396764307, guid: 9ea310a6f86685449b8442b36a7294bc,
     type: 3}
-  projectileSpeed: 10
-  deathVFX: {fileID: 1071744069281325474, guid: d34d474c1752d864db23cddfb0032f88,
+  projectileSpeed: 3
+  deathVFX: {fileID: 7358454841939959998, guid: 56a1f4bc0085df3479cfb9b839be888a,
     type: 3}
   durationOfExplosion: 1
   deathSFX: {fileID: 8300000, guid: 126c52029586e6c4788adf04eeca3333, type: 3}
   deathSFXVolume: 0.75
-  shootSound: {fileID: 8300000, guid: 4e890fdda6085de4ba9ca1af4fab7ec9, type: 3}
-  shootSoundVolume: 0.2
---- !u!58 &681474918829369120
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8243800183899196686}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.06}
-  serializedVersion: 2
-  m_Radius: 0.46
+  shootSound: {fileID: 8300000, guid: 9cf39380d8f8adb4b96872dd4769586c, type: 3}
+  shootSoundVolume: 0.5
 --- !u!50 &1173186997164418546
 Rigidbody2D:
   serializedVersion: 4
@@ -174,3 +158,59 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1000
+--- !u!60 &8288064407513497640
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8243800183899196686}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.52, y: 2.16}
+    newSize: {x: 0.97, y: 0.84}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.3906115, y: -1.0518199}
+      - {x: 0.37467074, y: -1.0799999}
+      - {x: 0.84, y: -1.0799999}
+      - {x: 0.9916614, y: -0.87166137}
+      - {x: 1.2531661, y: -0.50482756}
+      - {x: 1.2595379, y: -0.01977706}
+      - {x: 1.1916616, y: 0.12633237}
+      - {x: 1.0994885, y: 0.30231428}
+      - {x: 1.0989968, y: 0.5473355}
+      - {x: 1.0331662, y: 0.60282135}
+      - {x: 0.9441, y: 0.64591384}
+      - {x: 0.94, y: 1.0799999}
+      - {x: 0.53999996, y: 1.0799999}
+      - {x: 0.5374953, y: 0.6575407}
+      - {x: 0.31416935, y: 0.5769906}
+      - {x: -0.004325956, y: 0.87899685}
+      - {x: -0.30883452, y: 0.5639234}
+      - {x: -0.5455172, y: 0.6389969}
+      - {x: -0.53999996, y: 1.0799999}
+      - {x: -0.88, y: 1.0799999}
+      - {x: -0.96, y: 1}
+      - {x: -0.96757185, y: 0.6845163}
+      - {x: -1.092163, y: 0.53999996}
+      - {x: -1.1004704, y: 0.3232717}
+      - {x: -1.2531661, y: -0.08501569}
+      - {x: -1.2531661, y: -0.4574921}
+      - {x: -0.81065834, y: -1.0799999}
+      - {x: -0.41517243, y: -1.0799999}
+      - {x: -0.41416937, y: -0.5106583}
+      - {x: 0.39084625, y: -0.512163}
+      - {x: 0.38733545, y: -0.8468339}
